@@ -91,3 +91,46 @@ a {
   }
 }
 
+@media (max-width: 600px) {
+  header {
+    padding: 14px 10px !important;
+  }
+
+  header > div {
+    flex-direction: column !important;
+    gap: 14px !important;
+  }
+
+  header h2 {
+    font-size: 28px !important;
+  }
+
+  nav {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    width: 100% !important;
+    gap: 10px !important;
+  }
+
+  nav a {
+    text-align: center !important;
+    font-size: 13px !important;
+    padding: 8px 6px !important;
+  }
+
+  nav a:last-child {
+    grid-column: 1 / -1 !important;
+    margin-top: 4px !important;
+  }
+
+  div[style*="grid-template-columns: repeat(3, 1fr)"],
+  div[style*="grid-template-columns: repeat(2, 1fr)"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  div[style*="padding: 28"],
+  div[style*="padding: 24"] {
+    padding: 20px !important;
+  }
+}
+
