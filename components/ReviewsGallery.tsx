@@ -15,14 +15,30 @@ export default function ReviewsGallery({ images }: Props) {
 
   return (
     <>
-      <div className="reviews-grid">
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(3, 1fr)",
+          gap: 20,
+          marginTop: 20,
+        }}
+      >
         {visibleImages.map((image, i) => (
           <img
             key={i}
             src={image}
             alt={`Avis ${i + 1}`}
             onClick={() => setSelectedImage(image)}
-            className="review-image"
+            style={{
+              width: "100%",
+              height: 500,
+              objectFit: "contain",
+              borderRadius: 18,
+              border: "1px solid #e5e7eb",
+              background: "white",
+              padding: 10,
+              cursor: "pointer",
+            }}
           />
         ))}
       </div>
@@ -31,14 +47,23 @@ export default function ReviewsGallery({ images }: Props) {
         <div style={{ textAlign: "center", marginTop: 28 }}>
           <button
             onClick={() => setShowAll(!showAll)}
-            className="reviews-button"
+            style={{
+              padding: "12px 22px",
+              borderRadius: 999,
+              border: "1px solid #0f172a",
+              background: "white",
+              cursor: "pointer",
+            }}
           >
             {showAll ? "Voir moins" : "Voir plus d’avis"}
           </button>
         </div>
       )}
 
-      <ImageModal image={selectedImage} onClose={() => setSelectedImage(null)} />
+      <ImageModal
+        image={selectedImage}
+        onClose={() => setSelectedImage(null)}
+      />
     </>
   );
 }

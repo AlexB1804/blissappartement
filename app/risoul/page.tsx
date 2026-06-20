@@ -80,7 +80,15 @@ export default function Risoul() {
   subtitle="Les avantages qui rendent ce logement unique."
 />
 
-        <div className="feature-grid">
+        <div
+  className="responsive-grid-2"
+  style={{
+    display: "grid",
+    gridTemplateColumns: "repeat(2, 1fr)",
+    gap: 20,
+    marginTop: 20,
+  }}
+>
           <FeatureCard title="Au pied des pistes" description="Accès rapide aux pistes depuis la résidence." />
           <FeatureCard title="Balcon" description="Vue imprenable sur la montagne." />
           <FeatureCard title="Espace Bien-Être" description="Piscine et sauna disponibles dans la résidence." />
@@ -111,7 +119,15 @@ export default function Risoul() {
   subtitle="Explorez les incontournables de la station."
 />
 
-        <div className="discover-grid">
+        <div
+  className="responsive-grid-3"
+  style={{
+    display: "grid",
+    gridTemplateColumns: "repeat(3, 1fr)",
+    gap: 20,
+    marginTop: 20,
+  }}
+>
 
           {risoul.discover.map((place, i) => (
             <DiscoverCard key={i} title={place.title} description={place.description} />

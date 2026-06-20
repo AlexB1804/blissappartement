@@ -10,17 +10,44 @@ type Props = {
 
 export default function PricingCard({ prices }: Props) {
   return (
-    <div className="pricing-list">
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        gap: 12,
+        marginTop: 20,
+      }}
+    >
       {prices.map((item, i) => (
         <div
           key={i}
-          className={`pricing-item ${item.booked ? "pricing-booked" : ""}`}
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            padding: "16px 22px",
+            borderRadius: 14,
+            border: item.booked
+              ? "1px solid #fecaca"
+              : "1px solid #e5e7eb",
+            background: item.booked ? "#fef2f2" : "#ffffff",
+          }}
         >
-          <span className="pricing-period">
+          <span
+            style={{
+              fontWeight: 600,
+              color: item.booked ? "#dc2626" : "#0f172a",
+            }}
+          >
             {item.period}
           </span>
 
-          <span className="pricing-price">
+          <span
+            style={{
+              fontWeight: 700,
+              color: item.booked ? "#dc2626" : "#0f172a",
+            }}
+          >
             {item.booked ? "RÉSERVÉ" : item.price}
           </span>
         </div>
