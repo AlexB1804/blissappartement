@@ -519,3 +519,14 @@ a {
   }
 }
 
+@media (max-width: 768px) {
+  .home-destination-grid {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+
+  .destination-card {
+    height: 220px !important;
+  }
+}
+
