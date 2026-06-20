@@ -39,14 +39,7 @@ export default function ContactCard({ email, phone }: Props) {
         votre séjour.
       </p>
 
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          gap: 18,
-          flexWrap: "wrap",
-        }}
-      >
+      <div className="contact-buttons">
         <a
           href={`mailto:${email}`}
           style={{

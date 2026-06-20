@@ -3,94 +3,29 @@ import DestinationCard from "../components/DestinationCard";
 export default function Home() {
   return (
     <main>
-      <section
-        style={{
-          padding: "110px 20px 90px",
-          textAlign: "center",
-          background:
-          "linear-gradient(135deg, #fde68a 0%, #dbeafe 50%, #7dd3fc 100%)",
-        }}
-      >
-        <p
-          style={{
-            textTransform: "uppercase",
-            letterSpacing: 4,
-            color: "#64748b",
-            fontSize: 13,
-            marginBottom: 18,
-          }}
-        >
-          BlissAppartement
-        </p>
+      <section className="home-hero">
+        <p className="home-kicker">BlissAppartement</p>
 
-        <h1
-          style={{
-            fontSize: 58,
-            lineHeight: 1.05,
-            margin: 0,
-            fontFamily: "Georgia, 'Times New Roman', serif",
-            fontWeight: 500,
-          }}
-        >
-          Mer, Montagne et Provence
-        </h1>
+        <h1 className="home-title">Mer, Montagne et Provence</h1>
 
-        <p
-          style={{
-            maxWidth: 1000,
-            margin: "26px auto 0",
-            color: "#475569",
-            fontSize: 19,
-            lineHeight: 1.7,
-          }}
-        >
+        <p className="home-subtitle">
           Trois destinations de charme pour des séjours uniques à Port Grimaud,
           Risoul et Aix-en-Provence.
         </p>
       </section>
 
-      <section
-        style={{
-          maxWidth: 1200,
-          margin: "0 auto",
-          padding: "75px 20px",
-        }}
-      >
-        <div style={{ marginBottom: 38 }}>
-          <h2
-            style={{
-              fontSize: 34,
-              margin: 0,
-              fontFamily: "Georgia, 'Times New Roman', serif",
-              fontWeight: 500,
-            }}
-          >
-            Nos destinations
-          </h2>
-
-          <p
-            style={{
-              color: "#64748b",
-              marginTop: 12,
-              fontSize: 17,
-            }}
-          >
-            Choisissez l’ambiance de votre prochain séjour.
-          </p>
+      <section className="home-destinations">
+        <div className="home-section-header">
+          <h2>Nos destinations</h2>
+          <p>Choisissez l’ambiance de votre prochain séjour.</p>
         </div>
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(3, 1fr)",
-            gap: 30,
-          }}
-        >
+        <div className="home-destination-grid">
           <DestinationCard
             title="Port Grimaud"
             image="/IMG_3402.jpg"
             href="/port-grimaud"
-/>
+          />
 
           <DestinationCard
             title="Risoul"

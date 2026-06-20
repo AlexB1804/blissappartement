@@ -78,15 +78,7 @@ export default function PortGrimaud() {
   title="Les points forts"
   subtitle="Les avantages qui rendent ce logement unique."
 />
-        <div
-  className="responsive-grid-2"
-  style={{
-    display: "grid",
-    gridTemplateColumns: "repeat(2, 1fr)",
-    gap: 20,
-    marginTop: 20,
-  }}
->
+        <div className="feature-grid">
           <FeatureCard title="À 400m de la plage" description="Accès rapide à pied aux plages de Port Grimaud." />
           <FeatureCard title="Cartes de coche d'eau de la mi-juin à la mi-septembre " description="" />
           <FeatureCard title="Parking réservé" description="Place de parking privée." />
@@ -115,15 +107,8 @@ export default function PortGrimaud() {
   title="Découvrir Port Grimaud"
   subtitle="Explorez les incontournables de la cité lacustre."
 />
-        <div
-  className="responsive-grid-3"
-  style={{
-    display: "grid",
-    gridTemplateColumns: "repeat(3, 1fr)",
-    gap: 20,
-    marginTop: 20,
-  }}
->
+        <div className="discover-grid">
+  
           {portGrimaud.discover.map((place, i) => (
             <DiscoverCard key={i} title={place.title} description={place.description} />
           ))}

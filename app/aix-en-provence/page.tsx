@@ -77,15 +77,7 @@ export default function Aix() {
   subtitle="Les avantages qui rendent ce logement unique."
 />
 
-        <div
-  className="responsive-grid-2"
-  style={{
-    display: "grid",
-    gridTemplateColumns: "repeat(2, 1fr)",
-    gap: 20,
-    marginTop: 20,
-  }}
->
+        <div className="feature-grid">
           <FeatureCard title="Terrasse privative" description="Profitez du soleil provençal." />
           <FeatureCard title="4 couchages" description="Idéal pour famille ou couple." />
           <FeatureCard title="Localisation" description="A 3 km du centre d'Aix et à 1km des différents axes routiers permettant de visiter la région." />
@@ -116,15 +108,7 @@ export default function Aix() {
   subtitle="Explorez les incontournables d'Aix et de ses alentours."
 />
 
-        <div
-  className="responsive-grid-3"
-  style={{
-    display: "grid",
-    gridTemplateColumns: "repeat(3, 1fr)",
-    gap: 20,
-    marginTop: 20,
-  }}
->
+        <div className="discover-grid">
           {aix.discover.map((place, i) => (
             <DiscoverCard key={i} title={place.title} description={place.description} />
           ))}
