@@ -5,6 +5,7 @@ type Props = {
 export default function ServicesGrid({ services }: Props) {
   return (
     <div
+      className="responsive-grid-3"
       style={{
         display: "grid",
         gridTemplateColumns: "repeat(3, 1fr)",
