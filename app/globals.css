@@ -75,3 +75,54 @@ a {
   }
 }
 
+@media (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  header {
+    padding: 14px 12px !important;
+  }
+
+  header h2 {
+    font-size: 28px !important;
+    text-align: center;
+  }
+
+  nav {
+    width: 100%;
+    font-size: 13px !important;
+  }
+
+  nav a {
+    font-size: 13px !important;
+  }
+
+  main {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px 14px !important;
+  }
+
+  p {
+    font-size: 15px !important;
+  }
+
+  div {
+    max-width: 100%;
+  }
+
+  img {
+    height: auto !important;
+  }
+
+  table {
+    font-size: 13px;
+  }
+
+  td,
+  th {
+    padding: 10px 8px !important;
+  }
+}
+
