@@ -513,3 +513,9 @@ a {
   }
 }
 
+@media (max-width: 768px) {
+  .home-destination-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
