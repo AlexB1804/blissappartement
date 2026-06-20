@@ -519,13 +519,19 @@ a {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) and (orientation: portrait) {
   .home-destination-grid {
-    grid-template-columns: 1fr !important;
+    display: flex !important;
+    flex-direction: column !important;
     gap: 24px !important;
   }
 
+  .home-destination-grid a {
+    width: 100% !important;
+  }
+
   .destination-card {
+    width: 100% !important;
     height: 220px !important;
   }
 }
