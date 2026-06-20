@@ -26,64 +26,6 @@ a {
   box-sizing: border-box;
 }
 
-@media (max-width: 600px) {
-  header {
-    padding: 14px 10px !important;
-  }
-
-  .navbar-container {
-    flex-direction: column !important;
-    gap: 14px !important;
-  }
-
-  header h2 {
-    font-size: 26px !important;
-    text-align: center !important;
-  }
-
-  .navbar-links {
-    display: grid !important;
-    grid-template-columns: repeat(2, 1fr) !important;
-    width: 100% !important;
-    gap: 10px !important;
-  }
-
-  .navbar-links a {
-    text-align: center !important;
-    font-size: 13px !important;
-    padding: 8px 6px !important;
-  }
-
-  .navbar-reserve {
-    grid-column: 1 / -1 !important;
-  }
-
-  main {
-    max-width: 100% !important;
-    padding: 18px 14px !important;
-  }
-
-  h1 {
-    font-size: 34px !important;
-  }
-
-  h2 {
-    font-size: 26px !important;
-  }
-
-  p {
-    font-size: 15px !important;
-  }
-
-  .responsive-grid-3,
-  .responsive-grid-2 {
-    grid-template-columns: 1fr !important;
-  }
-
-  iframe {
-    height: 260px !important;
-  }
-}
 
 .home-hero {
   padding: 110px 20px 90px;
