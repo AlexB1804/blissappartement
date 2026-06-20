@@ -10,6 +10,12 @@ import SectionTitle from "../../components/SectionTitle";
 import PricingCard from "../../components/PricingCard";
 import LocationCard from "../../components/LocationCard";
 
+export const metadata = {
+  title: "Location gîte Aix-en-Provence | BlissAppartement",
+  description:
+    "Gîte tout confort à Aix-en-Provence dans le quartier de Célony avec parking privé et terrasse.",
+};
+
 export default function Aix() {
   return (
     <main style={{ maxWidth: 1000, margin: "0 auto", padding: 40 }}>

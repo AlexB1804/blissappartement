@@ -11,6 +11,12 @@ import ReviewsGallery from "../../components/ReviewsGallery";
 import PricingCard from "../../components/PricingCard";
 import LocationCard from "../../components/LocationCard";
 
+export const metadata = {
+  title: "Location appartement Port Grimaud | BlissAppartement",
+  description:
+    "Appartement avec vue sur la marina à Port Grimaud. Plage à pied, parking privé et tout confort.",
+};
+
 export default function PortGrimaud() {
   return (
     <main style={{ maxWidth: 1000, margin: "0 auto", padding: 40 }}>

@@ -2,8 +2,9 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 export const metadata = {
-  title: "Locations de vacances",
-  description: "Port Grimaud, Risoul, Aix-en-Provence",
+  title: "BlissAppartement | Locations de vacances",
+  description:
+    "Locations de vacances à Port Grimaud, Risoul 1850 et Aix-en-Provence. Appartements tout confort avec réservation directe.",
 };
 
 export default function RootLayout({

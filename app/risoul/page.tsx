@@ -12,6 +12,11 @@ import PricingCard from "../../components/PricingCard";
 import LocationCard from "../../components/LocationCard";
 import AvailabilityTable from "../../components/AvailabilityTable";
 
+export const metadata = {
+  title: "Location appartement Risoul 1850 | BlissAppartement",
+  description:
+    "Appartement skis aux pieds à Risoul 1850 avec piscine intérieure chauffée, sauna et vue montagne.",
+};
 
 export default function Risoul() {
   return (
