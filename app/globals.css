@@ -536,3 +536,15 @@ a {
   }
 }
 
+.home-destination-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+@media (max-width: 600px) and (orientation: portrait) {
+  .home-destination-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+

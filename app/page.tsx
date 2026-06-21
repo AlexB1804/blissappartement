@@ -79,13 +79,8 @@ export default function Home() {
           </p>
         </div>
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(3, 1fr)",
-            gap: 30,
-          }}
-        >
+        <div className="home-destination-grid">
+          
           <DestinationCard
             title="Port Grimaud"
             image="/IMG_3402.jpg"

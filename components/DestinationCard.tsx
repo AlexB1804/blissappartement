@@ -20,15 +20,16 @@ export default function DestinationCard({
       }}
     >
       <div
-        style={{
-          height: 300,
-          borderRadius: 20,
-          overflow: "hidden",
-          boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
-          transition: "0.3s",
-          position: "relative",
-        }}
-      >
+  className="destination-card"
+  style={{
+    height: 300,
+    borderRadius: 20,
+    overflow: "hidden",
+    boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
+    transition: "0.3s",
+    position: "relative",
+  }}
+>
         <img
           src={image}
           alt={title}
