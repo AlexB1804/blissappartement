@@ -570,3 +570,17 @@ a {
   }
 }
 
+
+@media (max-width: 600px) and (orientation: portrait) {
+  .reviews-grid {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+
+  .review-image {
+    height: 420px !important;
+    width: 100% !important;
+    object-fit: contain !important;
+  }
+}
+

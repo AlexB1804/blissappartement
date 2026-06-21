@@ -16,9 +16,9 @@ export default function ReviewsGallery({ images }: Props) {
   return (
     <>
       <div
+        className="reviews-grid"
         style={{
           display: "grid",
-          gridTemplateColumns: "repeat(3, 1fr)",
           gap: 20,
           marginTop: 20,
         }}
@@ -44,7 +44,9 @@ export default function ReviewsGallery({ images }: Props) {
       </div>
 
       {images.length > 3 && (
-        <div style={{ textAlign: "center", marginTop: 28 }}>
+        <div 
+        className="review-image"
+        style={{ textAlign: "center", marginTop: 28 }}>
           <button
             onClick={() => setShowAll(!showAll)}
             style={{
