@@ -25,10 +25,11 @@ export default function ReviewsGallery({ images }: Props) {
       >
         {visibleImages.map((image, i) => (
           <img
-            key={i}
-            src={image}
-            alt={`Avis ${i + 1}`}
-            onClick={() => setSelectedImage(image)}
+                key={i}
+                src={image}
+                alt={`Avis ${i + 1}`}
+                onClick={() => setSelectedImage(image)}
+                className="review-image"
             style={{
               width: "100%",
               height: 500,
@@ -45,7 +46,6 @@ export default function ReviewsGallery({ images }: Props) {
 
       {images.length > 3 && (
         <div 
-        className="review-image"
         style={{ textAlign: "center", marginTop: 28 }}>
           <button
             onClick={() => setShowAll(!showAll)}
