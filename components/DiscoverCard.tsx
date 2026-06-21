@@ -13,19 +13,7 @@ export default function DiscoverCard({ title, description }: Props) {
         border: "1px solid #e2e8f0",
       }}
     >
-    <div
-  className="destination-card"
-  style={{
-    height: 300,
-    borderRadius: 20,
-    overflow: "hidden",
-    boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
-    transition: "0.3s",
-    position: "relative",
-  }}
->
-    
-</div>
+
       <h3
         style={{
           marginTop: 0,
