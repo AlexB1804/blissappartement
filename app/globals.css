@@ -548,3 +548,25 @@ a {
   }
 }
 
+
+
+
+@media (max-width: 600px) and (orientation: portrait) {
+  .services-grid,
+  .gallery-grid,
+  .discover-grid {
+    grid-template-columns: 1fr !important;
+    gap: 22px !important;
+  }
+
+  .gallery-image {
+    height: 260px !important;
+    border-radius: 18px !important;
+  }
+
+  .discover-card,
+  .service-card {
+    width: 100% !important;
+  }
+}
+

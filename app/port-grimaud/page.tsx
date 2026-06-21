@@ -116,10 +116,9 @@ export default function PortGrimaud() {
   subtitle="Explorez les incontournables de la cité lacustre."
 />
         <div
-  className="responsive-grid-3"
+  className="discover-grid"
   style={{
     display: "grid",
-    gridTemplateColumns: "repeat(3, 1fr)",
     gap: 20,
     marginTop: 20,
   }}

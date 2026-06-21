@@ -120,10 +120,9 @@ export default function Risoul() {
 />
 
         <div
-  className="responsive-grid-3"
+  className="discover-grid"
   style={{
     display: "grid",
-    gridTemplateColumns: "repeat(3, 1fr)",
     gap: 20,
     marginTop: 20,
   }}

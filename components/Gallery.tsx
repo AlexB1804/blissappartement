@@ -17,9 +17,9 @@ export default function Gallery({ images }: Props) {
     <>
       <div>
         <div
+        className="gallery-grid"
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(3, 1fr)",
             gap: 16,
             marginTop: 20,
           }}
