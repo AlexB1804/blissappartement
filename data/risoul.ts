@@ -1,5 +1,5 @@
 export const risoul = {
-  title: "Risoul",
+  title: "Risoul 1850",
   image: "/IMG_3321.JPG",
 
   subtitle: "Profitez de la montagne, des pistes et du grand air toute l’année.",

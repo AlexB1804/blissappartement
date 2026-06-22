@@ -11,14 +11,37 @@ export const metadata = {
     "Locations de vacances à Port Grimaud, Risoul 1850 et Aix-en-Provence. Appartements tout confort avec réservation directe.",
 
   keywords: [
-    "location vacances",
-    "Port Grimaud",
-    "Risoul 1850",
-    "Aix-en-Provence",
-    "BlissAppartement",
-    "location appartement",
-    "gîte Provence",
-  ],
+  "location vacances",
+  "location saisonnière",
+  "location appartement",
+  "appartement vacances",
+  "location meublée touristique",
+
+  "Port Grimaud",
+  "location Port Grimaud",
+  "appartement Port Grimaud",
+  "location vacances Port Grimaud",
+  "Golfe de Saint-Tropez",
+
+  "Risoul",
+  "Risoul 1850",
+  "location Risoul",
+  "appartement Risoul",
+  "location ski Risoul",
+  "vacances montagne",
+
+  "Aix-en-Provence",
+  "location Aix-en-Provence",
+  "gîte Aix-en-Provence",
+  "vacances Provence",
+
+  "BlissAppartement",
+  "BlissAppartement Port Grimaud",
+  "BlissAppartement Risoul",
+  "BlissAppartement Aix-en-Provence",
+  "Karine Aubry Bomati",
+
+],
 
   icons: {
     icon: "/logo.png",
