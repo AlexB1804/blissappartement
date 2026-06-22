@@ -54,13 +54,17 @@ export default function ReviewsGallery({ images }: Props) {
           <button
             onClick={() => {
   if (showAll) {
-    buttonRef.current?.scrollIntoView({
-      behavior: "smooth",
-      block: "center",
-    });
-  }
+    setShowAll(false);
 
-  setShowAll(!showAll);
+    setTimeout(() => {
+      buttonRef.current?.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+      });
+    }, 50);
+  } else {
+    setShowAll(true);
+  }
 }}
             style={{
               padding: "12px 22px",
