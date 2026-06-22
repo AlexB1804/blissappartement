@@ -1,6 +1,7 @@
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Script from "next/script";
 
 export const metadata = {
   metadataBase: new URL("https://blissappartement.fr"),
@@ -49,6 +50,19 @@ export default function RootLayout({
       </head>
 
       <body>
+        <Script
+  src="https://www.googletagmanager.com/gtag/js?id=G-ZMLL63G3FP"
+  strategy="afterInteractive"
+/>
+
+<Script id="google-analytics" strategy="afterInteractive">
+  {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-ZMLL63G3FP');
+  `}
+</Script>
         <Navbar />
         {children}
         <Footer />
