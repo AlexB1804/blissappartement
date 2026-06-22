@@ -23,6 +23,9 @@ export const metadata = {
     siteName: "BlissAppartement",
     locale: "fr_FR",
     type: "website",
+    icons: {
+      icon: "/logo.png",
+  },
   },
 };
 
