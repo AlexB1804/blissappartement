@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+
 import ImageModal from "./ImageModal";
+import { useState, useRef } from "react";
 
 type Props = {
   images: string[];
@@ -12,6 +13,7 @@ export default function ReviewsGallery({ images }: Props) {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const visibleImages = showAll ? images : images.slice(0, 3);
+  const buttonRef = useRef<HTMLDivElement>(null);
 
   return (
     <>
@@ -46,9 +48,20 @@ export default function ReviewsGallery({ images }: Props) {
 
       {images.length > 3 && (
         <div 
-        style={{ textAlign: "center", marginTop: 28 }}>
+  ref={buttonRef}
+  style={{ textAlign: "center", marginTop: 28 }}
+>
           <button
-            onClick={() => setShowAll(!showAll)}
+            onClick={() => {
+  if (showAll) {
+    buttonRef.current?.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    });
+  }
+
+  setShowAll(!showAll);
+}}
             style={{
               padding: "12px 22px",
               borderRadius: 999,
