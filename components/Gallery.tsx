@@ -1,10 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import ImageModal from "./ImageModal";
-import { useRef } from "react";
 
-const buttonRef = useRef<HTMLDivElement>(null);
+
 
 type Props = {
   images: string[];
@@ -13,6 +12,7 @@ type Props = {
 export default function Gallery({ images }: Props) {
   const [showAll, setShowAll] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const buttonRef = useRef<HTMLDivElement>(null);
 
   const visibleImages = showAll ? images : images.slice(0, 3);
 
