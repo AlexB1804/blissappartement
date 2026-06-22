@@ -2,6 +2,9 @@
 
 import { useState } from "react";
 import ImageModal from "./ImageModal";
+import { useRef } from "react";
+
+const buttonRef = useRef<HTMLDivElement>(null);
 
 type Props = {
   images: string[];
@@ -43,9 +46,25 @@ export default function Gallery({ images }: Props) {
         </div>
 
         {images.length > 3 && (
-          <div style={{ textAlign: "center", marginTop: 28 }}>
+          <div
+  ref={buttonRef}
+  style={{ textAlign: "center", marginTop: 28 }}
+>
             <button
-              onClick={() => setShowAll(!showAll)}
+              onClick={() => {
+  if (showAll) {
+    setShowAll(false);
+
+    setTimeout(() => {
+      buttonRef.current?.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+      });
+    }, 50);
+  } else {
+    setShowAll(true);
+  }
+}}
               style={{
                 padding: "12px 22px",
                 borderRadius: 999,
