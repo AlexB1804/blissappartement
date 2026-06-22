@@ -23,9 +23,6 @@ export const metadata = {
     siteName: "BlissAppartement",
     locale: "fr_FR",
     type: "website",
-    verification: {
-    google: "kctZ5Nir_1EhHwg8gQNa7QylNMB-Y4ANswfe1tVMigk",
-  },
     icons: {
       icon: "/logo.png",
   },
@@ -39,11 +36,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="kctZ5Nir_1EhHwg8gQNa7QylNMB-Y4ANswfe1tVMigk"
+        />
+      </head>
+
       <body>
         <Navbar />
-
         {children}
-
         <Footer />
       </body>
     </html>
