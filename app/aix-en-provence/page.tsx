@@ -11,9 +11,9 @@ import PricingCard from "../../components/PricingCard";
 import LocationCard from "../../components/LocationCard";
 
 export const metadata = {
-  title: "Location gîte Aix-en-Provence | BlissAppartement",
+  title: "Location gîte Aix-en-Provence | Célony | BlissAppartement",
   description:
-    "Gîte tout confort à Aix-en-Provence dans le quartier de Célony avec parking privé et terrasse.",
+    "Location saisonnière à Aix-en-Provence : gîte rénové à Célony avec terrasse, parking sécurisé, accès rapide au centre d’Aix et à la Provence.",
 };
 
 export default function Aix() {

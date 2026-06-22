@@ -13,9 +13,9 @@ import LocationCard from "../../components/LocationCard";
 import AvailabilityTable from "../../components/AvailabilityTable";
 
 export const metadata = {
-  title: "Location appartement Risoul 1850 | BlissAppartement",
+  title: "Location appartement Risoul 1850 | Skis aux pieds | BlissAppartement",
   description:
-    "Appartement skis aux pieds à Risoul 1850 avec piscine intérieure chauffée, sauna et vue montagne.",
+    "Location à Risoul 1850 : appartement skis aux pieds avec piscine intérieure chauffée, sauna, terrasse, vue montagne et résidence Les Balcons de Sirius.",
 };
 
 export default function Risoul() {
