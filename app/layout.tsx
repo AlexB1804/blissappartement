@@ -27,10 +27,6 @@ export const metadata = {
     google: "kctZ5Nir_1EhHwg8gQNa7QylNMB-Y4ANswfe1tVMigk",
   },
     icons: {
-    icon: "/logo.png",
-  },
-};
-    icons: {
       icon: "/logo.png",
   },
   },
