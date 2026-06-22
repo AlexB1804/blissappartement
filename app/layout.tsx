@@ -3,9 +3,12 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 export const metadata = {
+  metadataBase: new URL("https://blissappartement.fr"),
+
   title: "BlissAppartement | Locations de vacances",
   description:
     "Locations de vacances à Port Grimaud, Risoul 1850 et Aix-en-Provence. Appartements tout confort avec réservation directe.",
+
   keywords: [
     "location vacances",
     "Port Grimaud",
@@ -15,6 +18,11 @@ export const metadata = {
     "location appartement",
     "gîte Provence",
   ],
+
+  icons: {
+    icon: "/logo.png",
+  },
+
   openGraph: {
     title: "BlissAppartement | Locations de vacances",
     description:
@@ -23,9 +31,6 @@ export const metadata = {
     siteName: "BlissAppartement",
     locale: "fr_FR",
     type: "website",
-    icons: {
-      icon: "/logo.png",
-  },
   },
 };
 
