@@ -36,6 +36,7 @@ export const metadata = {
   "vacances Provence",
 
   "BlissAppartement",
+  "Bliss Appartement",
   "BlissAppartement Port Grimaud",
   "BlissAppartement Risoul",
   "BlissAppartement Aix-en-Provence",

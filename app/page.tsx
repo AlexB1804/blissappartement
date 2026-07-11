@@ -49,6 +49,21 @@ export default function Home() {
         </p>
       </section>
 
+      <p
+  style={{
+    display: "inline-block",
+    marginTop: 24,
+    padding: "10px 18px",
+    borderRadius: 999,
+    background: "white",
+    color: "#0f172a",
+    fontWeight: 600,
+    boxShadow: "0 8px 20px rgba(15, 23, 42, 0.12)",
+  }}
+>
+  ⭐ Coup de cœur sur Airbnb
+</p>
+
       <section
         style={{
           maxWidth: 1200,

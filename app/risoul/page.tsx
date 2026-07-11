@@ -182,7 +182,12 @@ export default function Risoul() {
 </section>
 
       <section style={{ marginTop: 60, marginBottom: 60 }}>
-        <ContactCard email={risoul.contact.email} phone={risoul.contact.phone} />
+        <ContactCard
+  email={risoul.contact.email}
+  phone={risoul.contact.phone}
+  instagram={risoul.socials.instagram}
+  facebook={risoul.socials.facebook}
+/>
       </section>
     </main>
   );

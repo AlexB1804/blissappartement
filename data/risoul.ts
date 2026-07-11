@@ -172,4 +172,10 @@ practicalInfos: [
     email: "blissappartement@gmail.com",
     phone: "+33 6 35 50 36 52",
   },
+
+  socials: {
+    instagram: "https://www.instagram.com/blissappartementrisoul",
+    facebook: "https://www.facebook.com/blissappartementrisoul/",
+  },
+  
 };

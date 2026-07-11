@@ -219,7 +219,6 @@ practicalInfos: [
   "/reviews-port-grimaud/image0.jpeg",
   "/reviews-port-grimaud/image1.jpeg",
   "/reviews-port-grimaud/image2.jpeg",
-  "/reviews-port-grimaud/image3.png",
   "/reviews-port-grimaud/image4.jpeg",
   "/reviews-port-grimaud/image5.jpeg",
   "/reviews-port-grimaud/image6.jpeg",
@@ -256,5 +255,10 @@ practicalInfos: [
   contact: {
   email: "blissappartement@gmail.com",
   phone: "+33 6 35 50 36 52",
+  },
+
+socials: {
+  instagram: "https://www.instagram.com/blissappartementportgrimaud",
+  facebook: "https://www.facebook.com/blissappartementportgrimaud/",
 },
 };

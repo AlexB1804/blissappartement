@@ -172,7 +172,12 @@ export default function PortGrimaud() {
 </section>
 
       <section style={{ marginTop: 60, marginBottom: 60 }}>
-        <ContactCard email={portGrimaud.contact.email} phone={portGrimaud.contact.phone} />
+        <ContactCard
+  email={portGrimaud.contact.email}
+  phone={portGrimaud.contact.phone}
+  instagram={portGrimaud.socials.instagram}
+  facebook={portGrimaud.socials.facebook}
+/>
       </section>
     </main>
   );

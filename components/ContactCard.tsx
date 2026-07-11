@@ -1,9 +1,16 @@
 type Props = {
   email: string;
   phone: string;
+  instagram?: string;
+  facebook?: string;
 };
 
-export default function ContactCard({ email, phone }: Props) {
+export default function ContactCard({
+  email,
+  phone,
+  instagram,
+  facebook,
+}: Props) {
   return (
     <div
       style={{
@@ -38,6 +45,66 @@ export default function ContactCard({ email, phone }: Props) {
         Contactez-nous directement pour connaître les disponibilités et préparer
         votre séjour.
       </p>
+
+      {(instagram || facebook) && (
+  <>
+    <p
+      style={{
+        marginTop: 0,
+        marginBottom: 18,
+        color: "#cbd5e1",
+      }}
+    >
+      Suivez cet appartement
+    </p>
+
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        gap: 14,
+        flexWrap: "wrap",
+        marginBottom: 26,
+      }}
+    >
+      {instagram && (
+        <a
+          href={instagram}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            padding: "12px 18px",
+            borderRadius: 999,
+            background: "#E1306C",
+            color: "white",
+            textDecoration: "none",
+            fontWeight: 600,
+          }}
+        >
+          📷 Instagram
+        </a>
+      )}
+
+      {facebook && (
+        <a
+          href={facebook}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            padding: "12px 18px",
+            borderRadius: 999,
+            background: "#1877F2",
+            color: "white",
+            textDecoration: "none",
+            fontWeight: 600,
+          }}
+        >
+          👍 Facebook
+        </a>
+      )}
+    </div>
+  </>
+)}
 
       <div
         style={{
