@@ -131,11 +131,16 @@ practicalInfos: [
       price: "750 € / semaine",
     },
     {
-      period: "29/05 → 12/06",
+      period: "29/05 → 06/06",
       price: "750 € / semaine",
     },
     {
-      period: "12/06 → 26/06",
+      period: "07/06 → 14/06",
+      price: "RÉSERVÉ",
+      booked: true,
+    },
+    {
+      period: "15/06 → 26/06",
       price: "850 € / semaine",
     },
     {
@@ -239,6 +244,8 @@ practicalInfos: [
   "/reviews-port-grimaud/image22.jpeg",
   "/reviews-port-grimaud/image23.jpeg",
   "/reviews-port-grimaud/image24.jpeg",
+  "/reviews-port-grimaud/IMG_6957.jpeg",
+  "/reviews-port-grimaud/IMG_6958.jpeg",
 ],
 
  location: {

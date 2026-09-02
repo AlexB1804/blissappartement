@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://blissappartement.fr/sitemap.xml",
+    sitemap: "https://www.blissappartement.fr/sitemap.xml",
   };
 }

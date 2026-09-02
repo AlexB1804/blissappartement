@@ -102,12 +102,12 @@ practicalInfos: [
 
   winter2026_2027: [
     { period: "11/12 → 15/12", price: "Réservé", booked: true },
-    { period: "19/12 → 26/12", price: "950 € / semaine", available: true },
+    { period: "19/12 → 26/12", price: "Réservé", booked: true },
     { period: "26/12 → 02/01", price: "Réservé", booked: true },
     { period: "02/01 → 30/01", price: "650 € / semaine", available: true },
-    { period: "30/01 → 06/02", price: "750 € / semaine", available: true },
+    { period: "30/01 → 06/02", price: "Réservé", booked: true },
     { period: "06/02 → 28/02", price: "Réservé", booked: true },
-    { period: "28/02 → 07/03", price: "1180 € / semaine", available: true },
+    { period: "28/02 → 06/03", price: "980 € / semaine", available: true },
     { period: "07/03 → 14/03", price: "750 € / semaine", available: true },
     { period: "14/03 → 10/04", price: "650 € / semaine", available: true },
   ],
@@ -157,6 +157,7 @@ practicalInfos: [
   "/reviews/image8.jpeg",
   "/reviews/image9.jpeg",
   "/reviews/IMG_5847.jpg",
+  "/reviews/IMG_0000.png",
 ],
 
   location: {

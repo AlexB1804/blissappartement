@@ -81,7 +81,7 @@ export default function ContactCard({
             fontWeight: 600,
           }}
         >
-          📷 Instagram
+          Instagram
         </a>
       )}
 
@@ -99,7 +99,7 @@ export default function ContactCard({
             fontWeight: 600,
           }}
         >
-          👍 Facebook
+          Facebook
         </a>
       )}
     </div>

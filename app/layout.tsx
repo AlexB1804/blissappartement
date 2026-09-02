@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import Script from "next/script";
 
 export const metadata = {
-  metadataBase: new URL("https://blissappartement.fr"),
+  metadataBase: new URL("https://www.blissappartement.fr"),
 
   title: "BlissAppartement | Locations de vacances",
   description:
@@ -48,11 +48,15 @@ export const metadata = {
     icon: "/logo.png",
   },
 
+  alternates: {
+    canonical: "/",
+  },
+
   openGraph: {
     title: "BlissAppartement | Locations de vacances",
     description:
       "Trois destinations de charme entre mer, montagne et Provence.",
-    url: "https://blissappartement.fr",
+    url: "https://www.blissappartement.fr",
     siteName: "BlissAppartement",
     locale: "fr_FR",
     type: "website",
